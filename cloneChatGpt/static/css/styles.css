@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 400px;
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #3e3e3e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #494949;
+}
+
+.chat-header h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+
+.chat-header p {
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.chat-messages {
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    background-color: #1a1a1a;
+}
+
+.chat-messages .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background-color: #555;
+    color: #fff;
+    text-align: right;
+    align-self: flex-end;
+}
+
+.message.bot {
+    background-color: #444;
+    color: #ffcc00;
+}
+
+.message.bot.loading {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #3e3e3e;
+    border-top: 2px solid #494949;
+}
+
+.chat-input input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2c2c2c;
+}
+
+.chat-input input::placeholder {
+    color: #888;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-input button:hover {
+    background-color: #e6b800;
+}
+
+.message span {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: break-word;
+}
